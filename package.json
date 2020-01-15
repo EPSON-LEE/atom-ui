@@ -1,0 +1,28 @@
+{
+  "name": "atom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --open --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.2",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
