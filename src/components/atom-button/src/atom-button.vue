@@ -17,6 +17,15 @@
     },
     props: {
       /*
+       * 按钮尺寸
+       * 
+       * @ type {String}
+       */
+      size: {
+        type: String,
+        default: () => "medium"
+      },
+      /*
        * 按钮颜色 
        *
        * @type {String}
@@ -63,13 +72,15 @@
           return `${prefixCls}--active`
         }
       },
+      // 统一样式计算
       classes() {
         return {
-          [`${prefixCls}--raised`]: !this.flat,
+          // [`${prefixCls}--raised`]: !this.flat,
           [`${prefixCls}--flat`]: this.flat,
           [`${prefixCls}--depressed`]: (this.depressed && !this.flat) || this.outline,
           [`${prefixCls}--icon`]: this.icon,
-          [`${prefixCls}--outline`]: this.outline
+          [`${prefixCls}--outline`]: this.outline,
+          [`${prefixCls}--${this.size}`]: true
         }
       },
       computedRipple() {

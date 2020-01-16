@@ -279,6 +279,8 @@ $primary: ("base": $primary-color);
 
 $warning:("base": $warning-color);
 
+$test:("base": $test-color);
+
 $colors :("red": $red,
   "pink": $pink,
   "purple": $purple,
@@ -300,4 +302,5 @@ $colors :("red": $red,
   "grey": $grey,
   "shades": $shades,
   "primary": $primary,
+  "test": $test,
   "warning": $warning);

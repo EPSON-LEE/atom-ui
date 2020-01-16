@@ -1,10 +1,10 @@
 <!-- app.vue -->
 <template>
   <div class="app">
-    <Button color="primary">Primary</Button>
-    <Button color="warning">Warning</Button>
-    <Button color="red">Error</Button>
-    <Button color="green">Pass</Button>
+    <Button size="small" color="primary">Small</Button>
+    <Button size="medium" color="warning">Medium</Button>
+    <Button size="large" color="red">large</Button>
+    <Button color="test">Default</Button>
   </div>
 </template>
 
