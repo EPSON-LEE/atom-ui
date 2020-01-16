@@ -1,7 +1,7 @@
 <!-- app.vue -->
 <template>
   <div class="app">
-    <Button type="primary">Test</Button>
+    <Button>Test222</Button>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
       Button
     },
     data() {
-
+      return {}
     }
   }
 </script>
