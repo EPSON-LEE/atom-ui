@@ -1,8 +1,8 @@
-// @import "./custom";
-// @import "./mixins.scss";
-// @import "./components/index";
+@import "./custom.scss";
+@import "./mixins.scss";
+@import "./component/index.scss";
 
-// reset.scss
+// reset.css
 *,
 ::after,
 ::before {

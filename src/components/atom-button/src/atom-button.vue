@@ -1,13 +1,13 @@
 <script>
   import Colorable from "utils/mixins/Colorable"
-  import ButtonContent from "./button-content.vue"
+  import AtomButtonContent from "./atom-button-content.vue"
 
   const prefixCls = 'atom-button';
 
   export default {
     name: prefixCls,
     component: {
-      ButtonContent
+      AtomButtonContent
     },
     mixins: [
       Colorable
@@ -17,38 +17,40 @@
     },
     props: {
       /*
-      * 将类型应用于按钮 - 它不会影响链接
-      *
-      * @type {Boolean}
-      */
+       * 按钮颜色 
+       *
+       * @type {String}
+       */
+      color: {
+        type: String
+      },
+      /*
+       * 将类型应用于按钮 - 它不会影响链接
+       *
+       * @type {Boolean}
+       */
       type: {
         type: String,
         default: 'button'
       },
       /*
-      * 禁用该按钮并阻止其操作
-      *
-      * @type {Boolean}
-      */
+       * 禁用该按钮并阻止其操作
+       *
+       * @type {Boolean}
+       */
       disabled: {
         type: Boolean,
         default: false
       },
       /*
-      * 激活涟漪效果
-      *
-      * @type {Boolean}
-      */
+       * 激活涟漪效果
+       *
+       * @type {Boolean}
+       */
       ripple: {
         type: Boolean,
         default: true
-      },
-      name: {
-        // required: true
-      },
-      type: {
-        required: false
-      },
+      }
     },
     computed: {
       // 涟漪效果
@@ -98,8 +100,7 @@
     },
     render(createElement) {
       // 创建虚拟 dom
-      // debugger
-      const buttonContent = createElement(ButtonContent, {}, this.$slots.default)
+      const buttonContent = createElement(AtomButtonContent, {}, this.$slots.default)
 
       //  button 属性
       let buttonAttrs = {
@@ -132,28 +133,3 @@
     }
   }
 </script>
-
-
-<!-- <style>
-  .button {
-    width: 80px;
-    height: 30px;
-    border-radius: 3px;
-    background: #ecf5ff;
-    border: 1px solid #b3d8ff;
-    cursor: pointer;
-  }
-
-  button {
-    outline: none;
-  }
-
-  .ripple {
-    --gradient: linear-gradient(to bottom right, deeppink, orangered);
-    background: var(--gradient);
-  }
-
-  .ripple.animating {
-    background: paint(ripple), var(--gradient);
-  }
-</style> -->
