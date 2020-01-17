@@ -27,7 +27,6 @@ SideEffectsFlagPlugin ：识别 package.json 或者 module.rules 的 sideEffects
 UglifyJsPlugin ：删除未引用代码，并压缩
 
 ```
-
 ### [什么是 vue-loader](https://vue-loader.vuejs.org/zh/)
 
 ```
