@@ -18,6 +18,9 @@
 - [ ] calender 组件
 - [ ] 多语言
 - [ ] 拖拽日历
+- [ ] Radio 组件
+- [ ] Card 组件
+- [ ] 按需引入
 
 ## Contribute 方法
 
