@@ -135,7 +135,11 @@
           //   value: this.computedRipple
           // }
         ],
-        on: {}
+        on: {
+          click: (event) => {
+            this.$emit('click', this)
+          }
+        }
       }
 
       let _tag = 'button'

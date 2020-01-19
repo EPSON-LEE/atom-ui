@@ -8,7 +8,7 @@
 
 <script>
 
-  const prefixCls = 'atom-button-content';
+  const prefixCls = 'atom-button';
 
   export default {
     name: prefixCls,

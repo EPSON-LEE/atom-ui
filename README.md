@@ -9,6 +9,7 @@
 ## Roadmap
 
 - [x] Button 组件
+- [x] Toast 组件
 - [ ] Layout 组件
 - [ ] 组件库文档体系
 - [ ] Carousel 组件
